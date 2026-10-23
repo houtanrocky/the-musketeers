@@ -1,110 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maktab Sharif Group 3</title>
-  <meta name="description" content="Maktab Sharif Group 3 — a modern team landing page." />
+  <title>Maktab Sharif Group 3 — Java &amp; Frontend Engineers</title>
+  <meta name="description" content="Maktab Sharif Group 3 — four engineers shipping production Java backends and modern frontend interfaces. Spring, Hibernate, React, TypeScript and everything in between." />
+  <meta name="theme-color" content="#05060b" />
+  <meta property="og:title" content="Maktab Sharif Group 3 — Java &amp; Frontend Engineers" />
+  <meta property="og:description" content="Four engineers. One stack. Production Java backends and modern frontend interfaces, built together." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.className = 'js';</script>
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress__bar" id="scrollProgress"></span></div>
+  <div class="backdrop" aria-hidden="true">
+    <div class="backdrop__grid"></div>
+    <div class="aurora aurora--1"></div>
+    <div class="aurora aurora--2"></div>
+    <div class="aurora aurora--3"></div>
+    <div class="aurora aurora--4"></div>
+    <div class="backdrop__grain"></div>
+  </div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#hero" class="brand">Maktab Sharif<span class="dot">.</span>Group 3</a>
+      <a href="#hero" class="brand">
+        <span class="brand__mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="brand__text">Maktab Sharif<span class="dot">.</span>Group&nbsp;3</span>
+      </a>
       <nav class="nav" aria-label="Primary">
         <a href="#hero" class="nav-link">Home</a>
+        <a href="#stack" class="nav-link">Stack</a>
         <a href="#team" class="nav-link">Team</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
-
   <main>
+    <!-- ============================================================ HERO -->
     <section id="hero" class="hero">
-      <div class="hero-glow" aria-hidden="true"></div>
       <div class="container hero-inner">
-        <p class="eyebrow">Welcome to</p>
-        <h1 class="hero-title">Maktab Sharif <span class="grad">Group 3</span>
-</h1>
-        <p class="hero-subtitle">
-          We design, build, and ship delightful digital experiences — crafted by a small,
-          focused team of makers and problem solvers.
+        <span class="badge reveal">
+          <span class="badge__dot" aria-hidden="true"></span>
+          Java backend &middot; Modern frontend
+        </span>
+        <h1 class="hero-title reveal">
+          <span class="hero-title__line">We build with</span>
+          <span class="hero-title__line grad-glow">Java &amp; JavaScript</span>
+        </h1>
+        <p class="hero-subtitle reveal">
+          Four engineers from Maktab Sharif Group&nbsp;3. We ship production-grade
+          backends on Spring and Hibernate, and fast, accessible frontends with
+          React, TypeScript and vanilla web — the whole stack, written and reviewed together.
         </p>
-        <div class="hero-actions">
-          <a href="#team" class="btn btn-primary">Meet the team</a>
-          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        <div class="hero-actions reveal">
+          <a href="#stack" class="btn btn-primary">
+            Explore our stack
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#team" class="btn btn-ghost">Meet the engineers</a>
         </div>
-        <ul class="hero-stats" aria-label="Highlights">
-          <li>
-<strong>4</strong>
-<span>Team members</span>
-</li>
-          <li>
-<strong>1</strong>
-<span>Shared mission</span>
-</li>
-          <li>
-<strong>∞</strong>
-<span>Curiosity</span>
-</li>
+        <ul class="hero-stats reveal" aria-label="Highlights">
+          <li><strong>4</strong><span>Engineers</span></li>
+          <li><strong>2</strong><span>Stacks</span></li>
+          <li><strong>1</strong><span>Team</span></li>
+          <li><strong>&infin;</strong><span>Curiosity</span></li>
         </ul>
       </div>
-    </section>
-
-    <section id="team" class="team">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">The people</p>
-          <h2 class="section-title">Our Team</h2>
-          <p class="section-lead">A blend of engineering craft, design taste, and relentless curiosity.</p>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          <span class="ticker__group">
+            <span class="ticker__item">Java</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">Spring Boot</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">Hibernate / JPA</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">PostgreSQL</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">REST APIs</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">TypeScript</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">React</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">Tailwind CSS</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">Docker</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">Git</span><span class="ticker__sep">&bull;</span>
+          </span>
+          <span class="ticker__group">
+            <span class="ticker__item">Java</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">Spring Boot</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">Hibernate / JPA</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">PostgreSQL</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">REST APIs</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">TypeScript</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">React</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">Tailwind CSS</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">Docker</span><span class="ticker__sep">&bull;</span>
+            <span class="ticker__item">Git</span><span class="ticker__sep">&bull;</span>
+          </span>
         </div>
-        <div class="team-grid">
-          <article class="card">
-            <div class="avatar" aria-hidden="true">HR</div>
-            <h3 class="card-name">Houtan Rocky</h3>
-            <p class="card-role">Team Lead & Engineer</p>
+      </div>
+    </section>
+    <!-- =========================================================== STACK -->
+    <section id="stack" class="stack">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">What we work with</p>
+          <h2 class="section-title">One team, <span class="grad">two halves of the stack</span></h2>
+          <p class="section-lead">
+            Every feature we ship crosses the boundary between a Java service and a browser.
+            We own both sides — and the contract in between.
+          </p>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card reveal" tabindex="0">
+            <div class="stack-card__glow" aria-hidden="true"></div>
+            <header class="stack-card__head">
+              <span class="stack-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="19" cy="17" r="2.2"/></svg>
+              </span>
+              <div>
+                <h3 class="stack-card__title">Backend</h3>
+                <p class="stack-card__sub">Java, built to last</p>
+              </div>
+            </header>
+            <p class="stack-card__copy">
+              Layered services with clean domain boundaries, JPA persistence and
+              transactional correctness. APIs designed first, tested always.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">Java 21</li>
+              <li class="tag">Spring Boot</li>
+              <li class="tag">Spring Security</li>
+              <li class="tag">Hibernate / JPA</li>
+              <li class="tag">Maven</li>
+              <li class="tag">PostgreSQL</li>
+              <li class="tag">JUnit 5</li>
+              <li class="tag">REST</li>
+            </ul>
           </article>
-          <article class="card">
-            <div class="avatar" aria-hidden="true">RA</div>
-            <h3 class="card-name">Reza Asadipour</h3>
-            <p class="card-role">Full-Stack Developer</p>
+          <article class="stack-card reveal" tabindex="0">
+            <div class="stack-card__glow" aria-hidden="true"></div>
+            <header class="stack-card__head">
+              <span class="stack-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2.5"/><path d="M8 21h8M12 18v3"/></svg>
+              </span>
+              <div>
+                <h3 class="stack-card__title">Frontend</h3>
+                <p class="stack-card__sub">Interfaces that feel instant</p>
+              </div>
+            </header>
+            <p class="stack-card__copy">
+              Component-driven UIs with typed data flow, responsive layouts and
+              accessibility baked in from the first commit — not bolted on later.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">TypeScript</li>
+              <li class="tag">React</li>
+              <li class="tag">Vite</li>
+              <li class="tag">Tailwind CSS</li>
+              <li class="tag">HTML5</li>
+              <li class="tag">Modern CSS</li>
+              <li class="tag">Vitest</li>
+              <li class="tag">Playwright</li>
+            </ul>
           </article>
-          <article class="card">
-            <div class="avatar" aria-hidden="true">AG</div>
-            <h3 class="card-name">Amir Mahdi Ghadiri</h3>
-            <p class="card-role">Frontend Developer</p>
-          </article>
-          <article class="card">
-            <div class="avatar" aria-hidden="true">HK</div>
-            <h3 class="card-name">Hadis Kargar</h3>
-            <p class="card-role">UI/UX Designer</p>
+          <article class="stack-card reveal" tabindex="0">
+            <div class="stack-card__glow" aria-hidden="true"></div>
+            <header class="stack-card__head">
+              <span class="stack-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg>
+              </span>
+              <div>
+                <h3 class="stack-card__title">Shared practice</h3>
+                <p class="stack-card__sub">How the two halves meet</p>
+              </div>
+            </header>
+            <p class="stack-card__copy">
+              Contract-first API design, containerised local environments and
+              review on every pull request. The same conventions on both sides.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">OpenAPI</li>
+              <li class="tag">Docker</li>
+              <li class="tag">Git</li>
+              <li class="tag">CI pipelines</li>
+              <li class="tag">Code review</li>
+              <li class="tag">Accessibility</li>
+              <li class="tag">Performance</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
-
-    <section id="contact" class="contact">
-      <div class="container contact-inner">
-        <div class="section-head">
-          <p class="eyebrow">Say hello</p>
-          <h2 class="section-title">Contact</h2>
-          <p class="section-lead">Have an idea or a project in mind? We would love to hear from you.</p>
+    <!-- ============================================================ TEAM -->
+    <section id="team" class="team">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The people</p>
+          <h2 class="section-title">Our <span class="grad">engineers</span></h2>
+          <p class="section-lead">
+            Four engineers, equal footing — no titles, no hierarchy.
+            Everyone writes Java, everyone ships frontend.
+          </p>
         </div>
-        <a href="mailto:hello@maktabsharif.dev" class="btn btn-primary">hello@maktabsharif.dev</a>
+        <div class="team-grid">
+          <article class="card reveal" tabindex="0">
+            <div class="card__glow" aria-hidden="true"></div>
+            <div class="avatar" aria-hidden="true">
+              <span class="avatar__ring"></span>
+              <span class="avatar__initials">HR</span>
+            </div>
+            <h3 class="card-name">Houtan Rocky</h3>
+            <p class="card-role"><span class="chip"><span class="chip__dot" aria-hidden="true"></span>Full-stack engineer</span></p>
+            <ul class="card-stack">
+              <li>Java</li><li>Spring</li><li>React</li>
+            </ul>
+          </article>
+          <article class="card reveal" tabindex="0">
+            <div class="card__glow" aria-hidden="true"></div>
+            <div class="avatar" aria-hidden="true">
+              <span class="avatar__ring"></span>
+              <span class="avatar__initials">RA</span>
+            </div>
+            <h3 class="card-name">Reza Asadipour</h3>
+            <p class="card-role"><span class="chip"><span class="chip__dot" aria-hidden="true"></span>Full-stack engineer</span></p>
+            <ul class="card-stack">
+              <li>Java</li><li>JPA</li><li>TypeScript</li>
+            </ul>
+          </article>
+          <article class="card reveal" tabindex="0">
+            <div class="card__glow" aria-hidden="true"></div>
+            <div class="avatar" aria-hidden="true">
+              <span class="avatar__ring"></span>
+              <span class="avatar__initials">AM</span>
+            </div>
+            <h3 class="card-name">Amirhossein Mohammadifard</h3>
+            <p class="card-role"><span class="chip"><span class="chip__dot" aria-hidden="true"></span>Full-stack engineer</span></p>
+            <ul class="card-stack">
+              <li>Spring</li><li>PostgreSQL</li><li>React</li>
+            </ul>
+          </article>
+          <article class="card reveal" tabindex="0">
+            <div class="card__glow" aria-hidden="true"></div>
+            <div class="avatar" aria-hidden="true">
+              <span class="avatar__ring"></span>
+              <span class="avatar__initials">HK</span>
+            </div>
+            <h3 class="card-name">Hadis Kargar</h3>
+            <p class="card-role"><span class="chip"><span class="chip__dot" aria-hidden="true"></span>Full-stack engineer</span></p>
+            <ul class="card-stack">
+              <li>Java</li><li>REST</li><li>Tailwind</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ========================================================= CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <div class="section-head contact-head">
+            <p class="eyebrow">Say hello</p>
+            <h2 class="section-title">Let&rsquo;s build <span class="grad">something</span></h2>
+            <p class="section-lead">
+              A Java service that needs a face, or a frontend that needs real data behind it?
+              We would love to hear from you.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a href="mailto:hello@maktabsharif.dev" class="btn btn-primary">
+              hello@maktabsharif.dev
+              <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            </a>
+            <span class="contact-note">Usually reply within a day</span>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>© <span id="year"></span> Maktab Sharif Group 3</span>
-      <span class="footer-note">Built with HTML, CSS & vanilla JS</span>
+      <span>&copy; <span id="year"></span> Maktab Sharif Group 3</span>
+      <span class="footer-note">Java backend &middot; Modern frontend</span>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
