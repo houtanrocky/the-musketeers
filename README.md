@@ -1,7 +1,7 @@
 
-Maktab Sharif Group 3 — Landing Page
+The Musketeers — Landing Page
 
-A modern, responsive single-page site for Maktab Sharif Group 3, built with plain HTML, CSS, and vanilla JavaScript. No build step, no dependencies.
+A modern, responsive single-page site for The Musketeers, built with plain HTML, CSS, and vanilla JavaScript. No build step, no dependencies.
 
 Sections
 
@@ -88,7 +88,7 @@ bash
 
 
 git add .
-git commit -m "Initial commit: Maktab Sharif Group 3 landing page"
+git commit -m "Initial commit: The Musketeers landing page"
 git remote add origin https://github.com/<your-user>/<your-repo>.git
 git push -u origin main
 

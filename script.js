@@ -1,4 +1,4 @@
-/* Maktab Sharif Group 3 — navigation, scroll progress, reveals & card spotlight */
+/* The Musketeers — navigation, scroll progress, reveals & card spotlight */
 (function () {
 'use strict';
 
